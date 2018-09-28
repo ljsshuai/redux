@@ -1,0 +1,87 @@
+.Data_case
+{
+    background:white;
+    height:250px
+}
+.Data_case_main
+{
+    width:100%;
+    background:white;
+    margin-top:30px;
+
+}
+.Data_case_main ul
+{
+    width:100%;
+    background:white;
+    height: 100%;
+    line-height:250px
+}
+.Data_case_main>ul>li
+{
+    float:left;
+    list-Style:none;
+    width:20%;
+    margin-left:30px
+}
+.Data_case_main>ul>li>div
+{
+    height:150px;
+    border:1px solid #000;
+    text-align:center;
+    line-height:150px
+}
+.custom_report
+{
+    background:white;
+    height:100%;
+    margin-top:10px
+}
+.custom_report_title
+{
+    padding:20px
+}
+.custom_report_title button
+{
+    float: right;
+}
+.custom_report_main
+{
+    background:#f3f3f3;
+    width:97%;
+    text-align:center;
+    margin:30px auto;
+}
+.custom_report_main>ul
+{
+    background:#f3f3f3;
+    height:50px
+}
+.custom_report_main>ul>li
+{
+    float:left;
+    list-style:none;
+    width:20%;
+    line-height:50px
+}
+.custom_report_list
+{
+    height: 100%;
+    text-align:center;
+    margin:0px auto;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    background: white;
+
+}
+.custom_report_list>ul
+{
+
+    height:50px
+}
+.custom_report_list>ul>li
+{
+    float:left;
+    list-style:none;
+    width:20%;
+    line-height:50px
+}

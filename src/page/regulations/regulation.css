@@ -1,0 +1,34 @@
+.regulation_list
+{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background:white;
+}
+.search
+{
+    padding: 20px;
+}
+.regulation_nav
+{
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.regulation_nav>ul
+{
+    height:50px
+}
+.regulation_nav>ul>li
+{
+    float:left;
+    list-style:none;
+    margin-right: 5%;
+}
+.list_resoult
+{
+    margin-left: 20px;
+}
+.regulation_main
+{
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    padding: 20px;
+}

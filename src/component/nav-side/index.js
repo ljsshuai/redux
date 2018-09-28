@@ -12,13 +12,13 @@ class NavSide extends React.Component
                             <NavLink exact activeClassName="active-menu" to="/"><i className="glyphicon glyphicon-home"></i> <span>首页</span></NavLink>
                         </li>
                         <li className="active">
-                            <Link to="/product">
+                            <Link to="/regulation">
                                 <i className="glyphicon glyphicon-folder-open"></i>
                                 <span>政策法规</span>
                             </Link>
                         </li>
                         <li className="active">
-                            <Link to="/order">
+                            <Link to="/filmtelevisionrecord">
                                 <i className="glyphicon glyphicon-film"></i>
                                 <span>影视备案</span>
                             </Link>
