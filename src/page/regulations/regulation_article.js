@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../js/bootstrap.min';
 import './regulation_article.css'
+import Layout from '../../component/layout/index'
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
 class ReulationArticle extends React.Component{
     constructor(props)
@@ -10,6 +11,8 @@ class ReulationArticle extends React.Component{
 
     render(){
         return(
+            <div>
+                <Layout/>
             <div id='page-wrapper'>
                 <div className="report_list">
                     <div className="list_nav"><a href="/regulation">政策法规</a>/<span>详情</span></div>
@@ -108,6 +111,7 @@ class ReulationArticle extends React.Component{
                         将生活性服务业品质提升工作纳入市政府与各区政府签订的目标责任书和市政府对各区政府绩效考评范围，探索建立第三方绩效评估机制，客观评价生活性服务业品质提升工作成效。市商务委要会同市政府督查室加强对本工作方案落实情况的督促检查，推动各项任务落实。
                     </div>
                 </div>
+            </div>
             </div>
         );
     }

@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import '../../../js/bootstrap.min';
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
+import Layout from '../../component/layout/index'
 class Home extends React.Component{
     constructor(props)
     {
@@ -10,6 +11,8 @@ class Home extends React.Component{
 
     render(){
         return(
+            <div>
+                <Layout/>
             <div id='page-wrapper'>
                 <div className="Data_case" ><h4 style={{marginLeft:"10px"}}>数据案例</h4>
                <div  className="Data_case_main">
@@ -97,6 +100,7 @@ class Home extends React.Component{
                     </div>
                </div>
                </div>
+            </div>
             </div>
         );
     }

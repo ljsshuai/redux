@@ -1,6 +1,7 @@
 import React from 'react';
 import './report.css';
 import '../../../js/bootstrap.min';
+import Layout from '../../component/layout/index'
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
 class Report extends React.Component{
     constructor(props)
@@ -10,6 +11,8 @@ class Report extends React.Component{
 
     render(){
         return(
+            <div>
+            <Layout/>
             <div id='page-wrapper'>
                 <div className="report_list">
                     <div className="list_nav"><a href="/">定制报告</a>/<span>查看</span></div>
@@ -27,6 +30,7 @@ class Report extends React.Component{
                     </div>
                     <button type="button" className="btn btn-primary" style={{marginLeft:'7%'}}>下载报告</button>
                 </div>
+            </div>
             </div>
         );
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './regulation.css'
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
+import Layout from '../../component/layout/index'
 class Regulation extends React.Component{
     constructor(props)
     {
@@ -9,12 +10,14 @@ class Regulation extends React.Component{
 
     render(){
         return(
+            <div>
+                <Layout/>
             <div id='page-wrapper'>
                 <div className="regulation_list">
                    <div className="search">
                        <div className="input-group">
                            <div className="input-icon-group">
-                               <span class="glyphicon glyphicon-search fa-2x form-control-feedback"></span>
+                               <span className="glyphicon glyphicon-search fa-2x form-control-feedback"></span>
                                <input type="text" className="form-control fc-clear" placeholder="输入关键字查询政策信息"/>
                            </div>
                            <span className="input-group-btn"><button className="btn btn-primary" type="button" style={{width:'160px'}}>搜索</button></span>
@@ -73,6 +76,7 @@ class Regulation extends React.Component{
                         <div style={{color:'rgba(0,0,0,0.3)'}}>2016-10-22 12:00:00</div>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }

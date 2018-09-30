@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link,withRouter } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class NavTop extends React.Component{
     constructor(props)
@@ -19,11 +19,9 @@ class NavTop extends React.Component{
                 <ul className="nav navbar-top-links navbar-right">
                     <li className="dropdown">
                         <a className="dropdown-toggle"  href="javascript:;">
-                            <Link to='/usermanage'>
                             <i className="fa fa-user fa-fw"></i>
                             <span>Raymond</span>
                             <i className="fa fa-caret-down"></i>
-                            </Link>
                         </a>
                         <ul className="dropdown-menu dropdown-user">
                             <li>
@@ -39,5 +37,4 @@ class NavTop extends React.Component{
         );
     }
 }
-NavTop = withRouter(NavTop)
 export default NavTop;

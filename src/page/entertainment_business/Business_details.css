@@ -1,0 +1,45 @@
+.details_list
+{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background:white;
+}
+.details_list_nav
+{
+    padding: 20px;
+}
+.company_name
+{
+    width: 100%;
+    padding: 20px;
+}
+.company_name ul
+{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.company_name>ul>li
+{
+    float:left;
+    list-style:none;
+}
+.company_people
+{
+    margin-left: 20px;
+}
+.company_time,.company_phone,.company_address
+{
+    padding: 20px;
+}
+.company_time>ul>li
+{
+    float:left;
+    list-style:none;
+}
+.company_phone>ul>li
+{
+    float:left;
+    list-style:none;
+}
