@@ -1,0 +1,45 @@
+.login-panel
+{
+    margin-top: 55%;
+}
+.bgroundsize
+{
+    width: 100%;
+    height: 100%;
+}
+.bground
+{
+    background:white  no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    outline: none;
+    border: 0;
+    opacity: 0.9;
+}
+.order
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    height: 60px;
+    line-height: 60px;
+}
+.order .line
+{
+    display: inline-block;
+    width: 40%;
+    border-top: 1px solid #ccc;
+}
+.order .txt {
+    color: #686868;
+    vertical-align: middle;
+    vertical-align: -8%;
+}
+

@@ -11,14 +11,19 @@ import FilmTelevisionRecord from './page/film_television_record/filmtelevisionre
 import EntertainmentBusiness from './page/entertainment_business/entertainment_business';
 import Record from "./page/film_television_record/record";
 import BusinessDetails from "./page/entertainment_business/Business_details";
-
 import UserHome from './user_manage/user_page/userhome'
 import ManageIndex from './user_manage/user_page/manageindex'
+import Login from './login/login'
+import LoginRegister from './login/login_register'
+import ForgetPassword from './login/forget_password'
 class App extends React.Component{
     render(){
         return(
             <Router>
                 <Switch>
+                        <Route exact path='/login' component={Login}></Route>
+                        <Route exact path='/forgetpassword' component={ForgetPassword}></Route>
+                        <Route exact path='/loginregister' component={LoginRegister}></Route>
                         <Route exact path='/index' component={Home}></Route>
                         <Route exact path='/report' component={Report}></Route>
                         <Route exact path='/regulation' component={Reulation}></Route>
