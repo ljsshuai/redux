@@ -11,6 +11,7 @@ class BusinessDetails extends React.Component{
     render(){
         return(
             <div>
+                <Layout/>
             <div id='page-wrapper'>
                 <div className="details_list">
                     <div className="details_list_nav"><a href="/filmtelevisionrecord">文娱企业详情</a>/<span>详情</span></div>
