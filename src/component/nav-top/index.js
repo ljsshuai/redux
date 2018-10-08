@@ -14,7 +14,7 @@ class NavTop extends React.Component{
         return(
             <div className="navbar navbar-default top-navbar">
                 <div className="navbar-header" >
-                    <Link className="navbar-brand" to="/" ><b>虎影</b>科技</Link>
+                    <div className="navbar-brand"><b>虎影</b>科技</div>
                 </div>
                 <ul className="nav navbar-top-links navbar-right">
                     <li className="dropdown">

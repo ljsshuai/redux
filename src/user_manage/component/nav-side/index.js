@@ -1,11 +1,15 @@
 import  React from 'react';
 import {Link,NavLink} from 'react-router-dom'
+import { Pagination,LocaleProvider} from 'antd';
+import "antd/dist/antd.css";
+import zh_CN from 'antd/lib/locale-provider/zh_CN';
+import 'moment/locale/zh-cn';
 class NavSide extends React.Component
 {
 
     render(){
         return(
-            <div className="navbar-default navbar-side">
+            <div className="navbar-default navbar-side" style={{zIndex:'999'}}>
                 <div className="sidebar-collapse">
                     <ul className="nav">
                         <li>

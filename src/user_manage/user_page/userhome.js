@@ -24,8 +24,6 @@ class UserHome extends React.Component{
                 document.getElementById('cont2').style.display = 'block';
                 break;
         }
-
-
     }
     render(){
         return(
@@ -93,18 +91,18 @@ class UserHome extends React.Component{
                     <div id="cont1" style={{float:'left',width:'83%',height:'100%',marginLeft:'20px',display:'none'}}>
                         <div  style={{float:'left',width:'80%',height:'500px',lineHeight:'35px'}}>
                             <h4 ><strong>账号绑定</strong></h4>
-                            <div><input type="text" className="form-control" placeholder="手机号码" style={{width:'60%'}}/></div>
-                            <div><input type="text" className="form-control" placeholder="请根据下列图选择验证码" style={{width:'60%'}}/></div>
-                            <div><input type="text" className="form-control" placeholder="短信验证码" style={{width:'60%'}}/></div>
+                            <div><input type="text" className="form-control" placeholder="手机号码" style={{width:'60%',marginTop:'15px'}}/></div>
+                            <div><input type="text" className="form-control" placeholder="请根据下列图选择验证码" style={{width:'60%',marginTop:'15px'}}/></div>
+                            <div><input type="text" className="form-control" placeholder="短信验证码" style={{width:'60%',marginTop:'15px'}}/></div>
                             <button type="button" className="btn btn-primary" >确认绑定</button>
                         </div>
                     </div>{/*------账号绑定结束--------*/}
                     <div id="cont2" style={{float:'left',width:'83%',height:'100%',marginLeft:'20px',display:'none'}}>
                         <div  style={{float:'left',width:'80%',height:'500px',lineHeight:'35px'}}>
                             <h4 ><strong>修改密码</strong></h4>
-                            <div><input type="text" className="form-control" placeholder="旧密码" style={{width:'60%'}}/></div>
-                            <div><input type="text" className="form-control" placeholder="新密码" style={{width:'60%'}}/></div>
-                            <div><input type="text" className="form-control" placeholder="确认新密码" style={{width:'60%'}}/></div>
+                            <div><input type="text" className="form-control" placeholder="旧密码" style={{width:'60%',marginTop:'15px'}}/></div>
+                            <div><input type="text" className="form-control" placeholder="新密码" style={{width:'60%',marginTop:'15px'}}/></div>
+                            <div><input type="text" className="form-control" placeholder="确认新密码" style={{width:'60%',marginTop:'15px'}}/></div>
                             <button type="button" className="btn btn-primary" >确认修改</button>
                         </div>
                     </div>{/*------修改密码结束--------*/}

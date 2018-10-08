@@ -2,6 +2,10 @@ import React from 'react';
 import './regulation.css'
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
 import Layout from '../../component/layout/index'
+import { Pagination,LocaleProvider} from 'antd';
+import "antd/dist/antd.css";
+import zh_CN from 'antd/lib/locale-provider/zh_CN';
+import 'moment/locale/zh-cn';
 class Regulation extends React.Component{
     constructor(props)
     {
@@ -75,6 +79,7 @@ class Regulation extends React.Component{
                         <div ><h5>全面深入学习贯彻党的十九大精神，以习近平新时代中国特色社会主义思想为指导，坚持以人民为中心，充分发挥市场在资源配置中的决定性作用和更好发挥政府作用，准确把握生活性服务业的商业性和公益性双重属性，着力推进生活性服务业“规范智能化”(以下简称“六化”)发展，满足人民……</h5></div>
                         <div style={{color:'rgba(0,0,0,0.3)'}}>2016-10-22 12:00:00</div>
                     </div>
+                    <div style={{ height:'50px'}}> <LocaleProvider locale={zh_CN}><Pagination  total={50} showSizeChanger showQuickJumper style={{float:'right',marginTop:'10px'}}/></LocaleProvider></div>
                 </div>
             </div>
             </div>

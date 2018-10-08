@@ -5,11 +5,11 @@ class NavSide extends React.Component
 
     render(){
         return(
-            <div className="navbar-default navbar-side">
+            <div className="navbar-default navbar-side" style={{zIndex:'999'}}>
                 <div className="sidebar-collapse">
                     <ul className="nav">
                         <li>
-                            <NavLink exact activeClassName="active-menu" to="/index"><i className="glyphicon glyphicon-home"></i> <span>首页</span></NavLink>
+                            <NavLink exact activeClassName="active-menu" to="/"><i className="glyphicon glyphicon-home"></i> <span>首页</span></NavLink>
                         </li>
                         <li className="active">
                             <Link to="/regulation">

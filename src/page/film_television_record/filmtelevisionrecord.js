@@ -2,6 +2,10 @@ import React from 'react';
 import '../film_television_record/filmtelevisionrecord.css'
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
 import Layout from '../../component/layout/index'
+import { Pagination,LocaleProvider} from 'antd';
+import "antd/dist/antd.css";
+import zh_CN from 'antd/lib/locale-provider/zh_CN';
+import 'moment/locale/zh-cn';
 class FilmTelevisionRecord extends React.Component{
     constructor(props)
     {
@@ -126,6 +130,7 @@ class FilmTelevisionRecord extends React.Component{
                         <div className="film_time"><ul><li style={{width:'20%'}}>备案结果:同意拍摄</li><li>时间:2018-5-1</li></ul></div>
                         <div className="film_address"><ul><li style={{width:'20%'}}>备案地区:北京市</li><li>备案公司：北京视纳华仁印象影视制作有限公司</li></ul></div>
                     </div>
+                    <div style={{ height:'50px'}}> <LocaleProvider locale={zh_CN}><Pagination  total={50} showSizeChanger showQuickJumper style={{float:'right',marginTop:'10px'}}/></LocaleProvider></div>
                 </div>
             </div>
             </div>
