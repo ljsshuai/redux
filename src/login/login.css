@@ -21,6 +21,23 @@
     border: 0;
     opacity: 0.9;
 }
+.login_list
+{
+    position: fixed;
+    bottom: 60%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    height: 150px;
+    line-height: 60px;
+}
+.login_mian
+{
+    width: 25%;
+    background: white;
+    margin: 0 auto;
+    height: auto;
+}
 .order
 {
     position: fixed;

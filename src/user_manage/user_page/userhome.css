@@ -1,0 +1,21 @@
+.userhome
+{
+    width:100%;
+    float:left;
+    height:800px;
+    background:white;
+    padding:20px;
+}
+
+.nav_active:visited
+{
+    background:#f3f3f3;
+    color:red;
+    border-right:3px solid red;
+}
+.nav_active:hover
+{
+    background:#f3f3f3;
+    color:red;
+    border-right:3px solid red;
+}

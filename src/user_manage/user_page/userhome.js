@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../component/layout/index.js';
+import './userhome.css'
 class UserHome extends React.Component{
     constructor(props)
     {
@@ -40,17 +41,17 @@ class UserHome extends React.Component{
                     </div>
                         <div style={{display:'inline-flex'}}>sssdsd</div>
                     </div>*/}
-                <div style={{width:'100%',float:'left',height:'800px',background:'white',padding:'20px'}}>
+                <div className='userhome'>
                     <div style={{float:'left',height:'100%',width:'15%',borderRight:'solid 1px rgba(0,0,0,0.1)',lineHeight:'30px'}}>
                         <ul style={{padding:'0px',margin:'0px',lineHeight:'40px',fontSize:'18px',textAlign:'center'}}>
-                            <li  style={{width:'100%',listStyle:'none'}}>
-                                <a onClick={this.onClick.bind(this,'LI0')} >基本设置</a>
+                            <li className="nav_active" style={{width:'100%',listStyle:'none'}}>
+                                <a  onClick={this.onClick.bind(this,'LI0')} style={{color:'black'}} >个人资料</a>
                             </li>
-                            <li  style={{width:'100%',listStyle:'none'}}>
-                                <a onClick={this.onClick.bind(this,'LI1')} >账号绑定</a>
+                            <li className="nav_active" style={{width:'100%',listStyle:'none'}}>
+                                <a  onClick={this.onClick.bind(this,'LI1')} style={{color:'black'}}>账号绑定</a>
                             </li>
-                            <li  style={{width:'100%',listStyle:'none'}}>
-                                <a onClick={this.onClick.bind(this,'LI2')} >修改密码</a>
+                            <li className="nav_active" style={{width:'100%',listStyle:'none'}}>
+                                <a onClick={this.onClick.bind(this,'LI2')} style={{color:'black'}}>修改密码</a>
                             </li>
                         </ul>
                     </div>

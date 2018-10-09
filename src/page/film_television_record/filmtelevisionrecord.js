@@ -29,7 +29,7 @@ class FilmTelevisionRecord extends React.Component{
                     </div>
                     <div className="film_nav">
                         <ul>
-                            <li>影视类型:</li>
+                            <li><strong>影视类型:</strong></li>
                             <li>动画影片</li>
                             <li>记录影片</li>
                             <li>特种影片</li>
@@ -37,13 +37,13 @@ class FilmTelevisionRecord extends React.Component{
                             <li>合作影片</li>
                         </ul>
                         <ul>
-                            <li>发布时间:</li>
+                            <li><strong>发布时间:</strong></li>
                             <li>2018</li>
                             <li>2017</li>
                             <li>2016</li>
                         </ul>
                         <ul>
-                            <li>省份地区:</li>
+                            <li><strong>省份地区:</strong></li>
                             <li>全部</li>
                             <li>北京</li>
                             <li>上海</li>
