@@ -15,6 +15,8 @@ import ManageIndex from './user_manage/user_page/manageindex'
 import Login from './login/login'
 import LoginRegister from './login/login_register'
 import ForgetPassword from './login/forget_password'
+import ForgetPsdmain from './login/forget_password_main'
+import LoginRegisterMain from './login/login_register_main'
 class App extends React.Component{
     render(){
         return(
@@ -22,7 +24,9 @@ class App extends React.Component{
                 <Switch>
                         <Route exact path='/login' component={Login}></Route>
                         <Route exact path='/forgetpassword' component={ForgetPassword}></Route>
+                        <Route exact path='/forgetpsdmain' component={ForgetPsdmain}></Route>
                         <Route exact path='/loginregister' component={LoginRegister}></Route>
+                        <Route exact path='/loginregistermain' component={LoginRegisterMain}></Route>
                         <Route exact path='/' component={Home}></Route>
                         <Route exact path='/report' component={Report}></Route>
                         <Route exact path='/regulation' component={Reulation}></Route>

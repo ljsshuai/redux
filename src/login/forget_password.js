@@ -1,6 +1,7 @@
 import React from 'react';
 import './login.css'
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
+import LoginLayout from './login_layout'
 class ForgetPassword extends React.Component{
     constructor(props)
     {
@@ -16,40 +17,18 @@ class ForgetPassword extends React.Component{
     }
     render(){
         return(
-            <div className="bggroundsize" >
-                <div className="bground" >
-                    <div className="col-md-4 col-md-offset-4">
-                        <div className="panel panel-default login-panel">
-                            <div className="panel-heading panel-default">LO GO</div>
-                            <div className="panel-body">
-                                <div>
-                                    <div className="form-group">
-                                        <input type="text"
-                                               name="username"
-                                               className="form-control"
-                                                value="12343434"
-                                        />
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="password" className="form-control"  placeholder="请点击下图的树叶获取验证码"
-                                               name="password"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="password" className="form-control"  placeholder="短信验证码"
-                                               name="password"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="password" className="form-control"  placeholder="新密码"
-                                               name="password"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="password" className="form-control"  placeholder="确认新密码"
-                                               name="password"/>
-                                    </div>
-                                    <button className="btn btn-lg btn-primary btn-block">完成</button>
-                                </div>
-                            </div>
-                        </div>
+            <div style={{width:'100%',height:'100%',background:'#2b2e33',overflow:"hidden"}}>
+                <LoginLayout/>
+                <div className="login_list">
+                    <div className="login_mian">
+                        <div  style={{textAlign:'center'}}><img style={{margin:'60px auto',width:'150px'}} src={require("../image/login_logo.png")}></img></div>
+                        <input type="text"
+                               className="form-control"
+                               placeholder="请输入您注册的手机号"
+                               style={{width:'80%',height:'34px',margin:"0 auto",border:'none',borderBottom:'1px solid #ddd'}}
+                        />
+                        <Link to="/forgetpsdmain"><button type="button" className="btn btn-danger" style={{width:'80%',height:'55px',marginTop:'30px'}}>重置密码</button></Link>
+                        <div style={{lineHeight:'20px',width:'60%',margin:'0 auto',opacity:'0.5',height:'50px',marginTop:'30px'}}>如果无法通过手机号码找回,请发送邮箱至12123454@qq.com寻求帮助</div>
                     </div>
                 </div>
             </div>

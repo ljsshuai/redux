@@ -31,18 +31,27 @@
     height: 150px;
     line-height: 60px;
 }
+.register_list
+{
+    position: fixed;
+    bottom: 70%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    height: 150px;
+    line-height: 60px;
+}
 .login_mian
 {
     width: 25%;
     background: white;
     margin: 0 auto;
     height: auto;
+    padding: 20px;
 }
 .order
 {
-    position: fixed;
     bottom: 0;
-    width: 100%;
     text-align: center;
     color: black;
     height: 60px;
@@ -51,7 +60,7 @@
 .order .line
 {
     display: inline-block;
-    width: 40%;
+    width: 25%;
     border-top: 1px solid #ccc;
 }
 .order .txt {
@@ -59,4 +68,10 @@
     vertical-align: middle;
     vertical-align: -8%;
 }
+input,input:focus{
 
+    border: none;
+
+    box-shadow: none !important;
+
+}
