@@ -40,7 +40,7 @@
 }
 .custom_report_title
 {
-    padding:20px
+    padding:20px 20px 20px 0px;
 }
 .custom_report_title button
 {

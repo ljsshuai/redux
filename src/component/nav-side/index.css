@@ -1,0 +1,14 @@
+.nav>li:not(:nth-child(1)) a{
+    /*background: white !important;*/
+    border-Left:3px solid transparent;
+}
+
+.activemenu {
+    background: rgba(144,144,144,0.3)!important;
+    border-Left:3px solid red!important;
+    color: #fff !important;
+}
+
+.activemenu i {
+    color: #fff !important;
+}

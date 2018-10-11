@@ -14,22 +14,23 @@ class Home extends React.Component{
             <div>
                 <Layout/>
             <div id='page-wrapper'>
-                <div className="Data_case" style={{padding:'20px'}}><span style={{fontSize:'20px'}}><strong>数据案例</strong></span>
+                <div className="Data_case" style={{padding:'20px 20px 20px 0px'}}><div style={{borderLeft:'2px solid red',height:'28px',display:'inlineBox'}}><strong style={{fontSize:'20px',marginLeft:'20px'}}>数据案例</strong></div>
                <div  className="Data_case_main">
                    <ul>
-                       <li ><div >《xxx市》影视人才流动报告</div></li>
-                       <li ><div >《xxx市》影视人才流动报告</div></li>
-                       <li ><div >《xxx市》影视人才流动报告</div></li>
-                       <li ><div >《xxx市》影视人才流动报告</div></li>
+                       <li ><div>《xxx市》影视人才流动报告</div></li>
+                       <li ><div>《xxx市》影视人才流动报告</div></li>
+                       <li ><div>《xxx市》影视人才流动报告</div></li>
+                       <li ><div>《xxx市》影视人才流动报告</div></li>
                    </ul>
                </div>
                </div>
                <div className="custom_report">
                    <div className="custom_report_title">
-                       <span><strong style={{fontSize:'20px'}}>定制报告</strong></span>
+                       <div style={{borderLeft:'2px solid red',height:'28px',display:'inlineBox'}}><strong style={{fontSize:'20px',marginLeft:'20px'}}>定制报告</strong>
                        <button type="button" className="btn btn-default" data-toggle="modal" data-target="#myModal" style={{width:'120px',color:'white',background:'red',fontSize:'13px'}}>
                            <i className="glyphicon glyphicon-level-up" style={{marginRight:'6px'}}></i>定制报告
                        </button></div>
+                   </div>
                    <div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
                        <div className="modal-dialog" role="document">
                            <div className="modal-content">

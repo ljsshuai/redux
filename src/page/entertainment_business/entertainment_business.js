@@ -1,6 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
 import Layout from '../../component/layout/index';
+import zh_CN from "antd/lib/locale-provider/zh_CN";
+import { Pagination,LocaleProvider} from 'antd';
 class EntertainmentBusiness extends React.Component{
     constructor(props)
     {
@@ -24,21 +26,21 @@ class EntertainmentBusiness extends React.Component{
                     </div>
                     <div className="film_nav">
                         <ul>
-                            <li>企业状态:</li>
+                            <li><strong>企业状态:</strong></li>
                             <li>全部</li>
                             <li>吊销</li>
                             <li>注销</li>
                             <li>迁出</li>
                         </ul>
                         <ul>
-                            <li>注册时间:</li>
+                            <li><strong>注册时间:</strong></li>
                             <li>全部</li>
                             <li>2018</li>
                             <li>2017</li>
                             <li>2016</li>
                         </ul>
                         <ul>
-                            <li>注册资金:</li>
+                            <li><strong>注册资金:</strong></li>
                             <li>0-100万</li>
                             <li>100-200万</li>
                             <li>200-500万</li>
@@ -47,7 +49,7 @@ class EntertainmentBusiness extends React.Component{
                             <li>5000万以上</li>
                         </ul>
                         <ul>
-                            <li>省份地区:</li>
+                            <li><strong>省份地区:</strong></li>
                             <li>全部</li>
                             <li>北京</li>
                             <li>上海</li>
@@ -91,6 +93,7 @@ class EntertainmentBusiness extends React.Component{
                         <div className="film_time"><ul><li style={{width:'20%'}}>联系电话:123456789</li><li>邮箱:XXXXX@XXXX.com</li></ul></div>
                         <div className="film_address"><ul><li style={{width:'70%'}}>地址:北京市海淀区清河西三旗转盘东路3号沁春家园9号楼5单元301室</li></ul></div>
                     </div>
+                    <div style={{ height:'50px'}}> <LocaleProvider locale={zh_CN}><Pagination  total={50} showSizeChanger showQuickJumper style={{float:'right',marginTop:'10px'}}/></LocaleProvider></div>
                 </div>
             </div>
             </div>

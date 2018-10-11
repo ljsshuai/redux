@@ -10,13 +10,16 @@ import FilmTelevisionRecord from './page/film_television_record/filmtelevisionre
 import EntertainmentBusiness from './page/entertainment_business/entertainment_business';
 import Record from "./page/film_television_record/record";
 import BusinessDetails from "./page/entertainment_business/Business_details";
-import UserHome from './user_manage/user_page/userhome'
+import UserHomeManage from './user_manage/user_page/user_home'
 import ManageIndex from './user_manage/user_page/manageindex'
 import Login from './login/login'
 import LoginRegister from './login/login_register'
 import ForgetPassword from './login/forget_password'
 import ForgetPsdmain from './login/forget_password_main'
 import LoginRegisterMain from './login/login_register_main'
+import UserHomeData from './user_manage/user_page/user_home_data'
+import UserAccountBinding from './user_manage/user_page/user_ Account_binding'
+import UserChangePassword from './user_manage/user_page/user_change_password'
 class App extends React.Component{
     render(){
         return(
@@ -35,8 +38,10 @@ class App extends React.Component{
                         <Route exact path='/filmtelevisionrecord/record' component={Record}></Route>
                         <Route exact path='/entertainment_business' component={EntertainmentBusiness}></Route>
                         <Route exact path='/entertainment_business/details' component={BusinessDetails}></Route>
-                        <Route exact path='/usermanage' component={UserHome}></Route>
-                        <Route exact path='/usermanage/manageindex' component={ManageIndex}></Route>
+                        <Route exact path='/usermanage' component={UserHomeManage}></Route>
+                        <Route  path='/usermanage/data' component={UserHomeData}></Route>
+                        <Route path='/usermanage/accountBinding' component={UserAccountBinding}/>
+                        <Route path='/usermange/changepassword' component={UserChangePassword}/>
                 </Switch>
             </Router>
         );
