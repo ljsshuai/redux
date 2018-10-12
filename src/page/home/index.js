@@ -3,12 +3,12 @@ import './index.css';
 import '../../../js/bootstrap.min';
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
 import Layout from '../../component/layout/index'
+import store from "../../store";
 class Home extends React.Component{
     constructor(props)
     {
         super(props);
     }
-
     render(){
         return(
             <div>
@@ -36,7 +36,7 @@ class Home extends React.Component{
                            <div className="modal-content">
                                <div className="modal-header" style={{background:'red'}}>
                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style={{color:'white'}}>&times;</span></button>
-                                   <div className="modal-title" id="myModalLabel" style={{fontSize:'14px',color:'white'}}><strong>定制报告</strong></div>
+                                   <div className="modal-title" id="myModalLabel" style={{fontSize:'14px',color:'white'}} ><strong>定制报告</strong></div>
                                </div>
                                <div className="modal-body">
                                    <div className="form-group">

@@ -20,6 +20,8 @@ import LoginRegisterMain from './login/login_register_main'
 import UserHomeData from './user_manage/user_page/user_home_data'
 import UserAccountBinding from './user_manage/user_page/user_ Account_binding'
 import UserChangePassword from './user_manage/user_page/user_change_password'
+import IndustrialAnalysis from './page/industrial_analysis/industrial_analysis'
+import MovieLibrary from './page/movie_Library/movielibrary'
 class App extends React.Component{
     render(){
         return(
@@ -36,9 +38,11 @@ class App extends React.Component{
                         <Route exact path='/regulation/article' component={ReulationArticle}></Route>
                         <Route exact path='/filmtelevisionrecord' component={FilmTelevisionRecord}></Route>
                         <Route exact path='/filmtelevisionrecord/record' component={Record}></Route>
+                        <Route exact path='/analysis' component={IndustrialAnalysis} />
                         <Route exact path='/entertainment_business' component={EntertainmentBusiness}></Route>
                         <Route exact path='/entertainment_business/details' component={BusinessDetails}></Route>
                         <Route exact path='/usermanage' component={UserHomeManage}></Route>
+                        <Route  path='/movielibrary' component={MovieLibrary}></Route>
                         <Route  path='/usermanage/data' component={UserHomeData}></Route>
                         <Route path='/usermanage/accountBinding' component={UserAccountBinding}/>
                         <Route path='/usermange/changepassword' component={UserChangePassword}/>

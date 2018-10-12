@@ -10,7 +10,6 @@ class Login extends React.Component{
     componentWillMount()
     {
         document.title="登陆-虎影智库";
-
     }
     componentDidMount(){
     }
