@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "antd": "^3.10.0",
+    "echarts": "^4.2.0-rc.1",
     "font-awesome": "^4.7.0",
     "prop-types": "15.6.0",
     "rc-pagination": "1.15.1",
