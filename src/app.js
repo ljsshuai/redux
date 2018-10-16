@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router,Switch,Route,Link,Redirect} from 'react-router-dom';
+import {createStore,applyMiddleware,compose}from 'redux'
+import thunk from 'redux-thunk'
 //页面
 import Home from './page/home/index'
 import Report from "./page/home/report";
@@ -21,10 +23,15 @@ import UserAccountBinding from './user_manage/user_page/user_ Account_binding'
 import UserChangePassword from './user_manage/user_page/user_change_password'
 import IndustrialAnalysis from './page/industrial_analysis/industrial_analysis'
 import MovieLibrary from './page/movie_Library/movielibrary'
+import {auth} from "./store/login.redux";
+import {Provider} from "react-redux";
+const store=createStore(auth,compose(applyMiddleware(thunk),
+    window.devToolsExtension?window.devToolsExtension():f=>f));
 class App extends React.Component{
     render(){
         return(
-            <Router>
+            <Provider store={store}>
+            <Router >
                 <Switch>
                         <Route exact path='/login' component={Login}></Route>
                         <Route exact path='/forgetpassword' component={ForgetPassword}></Route>
@@ -47,6 +54,7 @@ class App extends React.Component{
                         <Route path='/usermange/changepassword' component={UserChangePassword}/>
                 </Switch>
             </Router>
+             </Provider>
         );
     }
 }
