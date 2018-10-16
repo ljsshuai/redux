@@ -16,7 +16,7 @@ class Regulation extends React.Component{
         return(
             <div>
                 <Layout/>
-            <div id='page-wrapper'>
+            <div id='page-wrapper' >
                 <div className="regulation_list">
                    <div className="search">
                        <div className="input-group">

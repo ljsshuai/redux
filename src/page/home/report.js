@@ -13,8 +13,8 @@ class Report extends React.Component{
         return(
             <div>
             <Layout/>
-            <div id='page-wrapper'>
-                <div className="report_list">
+            <div id='page-wrapper' >
+                <div className="report_list" >
                     <div className="list_nav"><a href="/">定制报告</a>/<span>查看</span></div>
                     <div className="report_list_main">
                         <div className="report_list_main_name"><div className="main_title"><strong>报告名称:</strong></div><div className="main_main">XXXXXXXXXXXXX</div></div>

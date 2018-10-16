@@ -3,7 +3,7 @@ import './index.css';
 import '../../../js/bootstrap.min';
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
 import Layout from '../../component/layout/index'
-import store from "../../store";
+
 class Home extends React.Component{
     constructor(props)
     {

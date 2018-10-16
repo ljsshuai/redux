@@ -11,7 +11,6 @@ import EntertainmentBusiness from './page/entertainment_business/entertainment_b
 import Record from "./page/film_television_record/record";
 import BusinessDetails from "./page/entertainment_business/Business_details";
 import UserHomeManage from './user_manage/user_page/user_home'
-import ManageIndex from './user_manage/user_page/manageindex'
 import Login from './login/login'
 import LoginRegister from './login/login_register'
 import ForgetPassword from './login/forget_password'

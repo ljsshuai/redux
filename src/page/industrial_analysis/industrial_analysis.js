@@ -15,7 +15,7 @@ class IndustrialAnalysis extends React.Component{
         return(
             <div>
                 <Layout/>
-                <div id='page-wrapper'>
+                <div id='page-wrapper' >
                     <ul style={{listStyle:'none',margin:'0 auto'}}>
                         <li style={{float:'left',width:'31%',marginLeft:"20px"}}>
                             <div style={{background:'white',textAlign:'center',padding:'40px'}}>

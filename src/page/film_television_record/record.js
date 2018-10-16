@@ -12,7 +12,7 @@ class Record extends React.Component{
         return(
             <div>
                 <Layout/>
-            <div id='page-wrapper'>
+            <div id='page-wrapper' >
                 <div className="record_list">
                     <div className="list_nav"><a href="/filmtelevisionrecord">影视备案信息</a>/<span>详情</span></div>
                     <div style={{textAlign:'center'}}>
