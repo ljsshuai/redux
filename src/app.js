@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router,Switch,Route,Link,Redirect} from 'react-router-dom';
+import {BrowserRouter,Switch,Route,Link,Redirect} from 'react-router-dom';
 import {createStore,applyMiddleware,compose}from 'redux'
 import thunk from 'redux-thunk'
 //页面
@@ -31,14 +31,14 @@ class App extends React.Component{
     render(){
         return(
             <Provider store={store}>
-            <Router >
+            <BrowserRouter>
                 <Switch>
-                        <Route exact path='/login' component={Login}></Route>
+                        <Route exact path='/' component={Login}></Route>
                         <Route exact path='/forgetpassword' component={ForgetPassword}></Route>
                         <Route exact path='/forgetpsdmain' component={ForgetPsdmain}></Route>
                         <Route exact path='/loginregister' component={LoginRegister}></Route>
                         <Route exact path='/loginregistermain' component={LoginRegisterMain}></Route>
-                        <Route exact path='/' component={Home}></Route>
+                        <Route exact path='/index' component={Home}></Route>
                         <Route exact path='/report' component={Report}></Route>
                         <Route exact path='/regulation' component={Reulation}></Route>
                         <Route exact path='/regulation/article' component={ReulationArticle}></Route>
@@ -53,7 +53,7 @@ class App extends React.Component{
                         <Route path='/usermanage/accountBinding' component={UserAccountBinding}/>
                         <Route path='/usermange/changepassword' component={UserChangePassword}/>
                 </Switch>
-            </Router>
+            </BrowserRouter>
              </Provider>
         );
     }

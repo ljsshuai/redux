@@ -13,7 +13,7 @@ class NavSide extends React.Component
                             <img style={{margin:'5px auto',width:'158px'}} src={require("../../image/logo.png")}></img>
                         </li>
                         <li className="active" >
-                            <NavLink exact activeClassName="activemenu" to="/" style={{padding:'18px 44px'}}  title='首页'>
+                            <NavLink exact activeClassName="activemenu" to="/index" style={{padding:'18px 44px'}}  title='首页'>
                                 <i className="glyphicon glyphicon-home"></i><span>首页</span></NavLink>
                         </li>
                         <li className="active">

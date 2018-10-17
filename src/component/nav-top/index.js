@@ -1,16 +1,23 @@
 import React from 'react';
 import {Link,withRouter } from 'react-router-dom';
-
+import{loginout} from '../../store/login.redux';
+import {connect} from "react-redux";
+var storage=window.localStorage;
+@connect(state=>state,{loginout})
 class NavTop extends React.Component{
+    //退出登录
     constructor(props)
     {
-        super(props)
+        super(props);
+    }
+    componentWillMount()
+    {
 
     }
-    //退出登录
     onLogout(){
     }
     render(){
+        console.log(this.props)
         return(
             <div className="navbar navbar-default top-navbar">
                 <div className="navbar-header" >
@@ -22,7 +29,7 @@ class NavTop extends React.Component{
                         <a className="dropdown-toggle" style={{padding:'11px',marginRight:'30px'}}>
                             <Link to='/usermanage'>
                                 <img src={require("../../image/u2441.jpg")}  className="img-circle" style={{width:'40px',height:'40px',marginRight:'5px'}} />
-                            <span>Raymond</span>
+                            <span style={{fontSize:'18px'}}>{storage.username}</span>
                             {/*<i className="fa fa-caret-down"></i>*/}
                             </Link>
                         </a>

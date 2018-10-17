@@ -18,7 +18,8 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['env', 'react']
+                        presets: ['env', 'react'],
+                        plugins: ['transform-decorators-legacy']
                     }
                 }
             },
@@ -80,7 +81,7 @@ module.exports = {
         })
     ],
     devServer:{
-        port:8086,
+        port:9000,
         historyApiFallback:
             {
                 index:'/dist/index.html'
