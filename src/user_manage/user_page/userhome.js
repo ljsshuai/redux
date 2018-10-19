@@ -82,7 +82,13 @@ class UserHome extends React.Component{
                                     <li><a href="#">Separated link</a></li>
                                 </ul>
                             </div>
-                            <div>国家地区</div>
+                            <div>所在省市: <select id="province" name="province">
+                            </select>
+                                <select id="city" name="city">
+                                </select>
+                                <select id="area" name="area">
+                                </select>
+                            </div>
                             <div><input type="text" className="form-control" placeholder="Search" style={{width:'60%'}}/></div>
                             <div>国家地区</div>
                             <div><input type="text" className="form-control" placeholder="Search" style={{width:'60%'}}/></div>

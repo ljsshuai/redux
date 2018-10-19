@@ -23,7 +23,7 @@ import UserAccountBinding from './user_manage/user_page/user_ Account_binding'
 import UserChangePassword from './user_manage/user_page/user_change_password'
 import IndustrialAnalysis from './page/industrial_analysis/industrial_analysis'
 import MovieLibrary from './page/movie_Library/movielibrary'
-import {auth} from "./store/login.redux";
+import {auth,nav_title} from "./store/login.redux";
 import {Provider} from "react-redux";
 const store=createStore(auth,compose(applyMiddleware(thunk),
     window.devToolsExtension?window.devToolsExtension():f=>f));

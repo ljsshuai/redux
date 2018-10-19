@@ -31,7 +31,7 @@ class Regulation extends React.Component{
                        <ul>
                            <li><strong>发文主体:</strong></li>
                            <li>全部</li>
-                           <li>中英政策</li>
+                           <li>中央政策</li>
                            <li>国务院组成及相关部门</li>
                            <li>地方政策</li>
                        </ul>
@@ -50,10 +50,10 @@ class Regulation extends React.Component{
                            <li>重庆</li>
                        </ul>
                    </div>
-                    <div className="list_resoult">共查询到XXX条相关信息</div>
+                    <div className="list_resoult" style={{color:'rgba(0,0,0,0.3)'}}>共查询到XXX条相关信息</div>
                    <div className="regulation_main">
                        <div><Link to='/regulation/article'><h4 style={{fontWeight:'550'}}>关于做好涉及占掘路审批的低压电力接入工程优化营商环境有关工作的通知</h4></Link></div>
-                       <div ><h5>全面深入学习贯彻党的十九大精神，以习近平新时代中国特色社会主义思想为指导，坚持以人民为中心，充分发挥市场在资源配置中的决定性作用和更好发挥政府作用，准确把握生活性服务业的商业性和公益性双重属性，着力推进生活性服务业“规范智能化”(以下简称“六化”)发展，满足人民……</h5></div>
+                       <div ><h5 style={{color:'rgba(0,0,0,0.7)'}}>全面深入学习贯彻党的十九大精神，以习近平新时代中国特色社会主义思想为指导，坚持以人民为中心，充分发挥市场在资源配置中的决定性作用和更好发挥政府作用，准确把握生活性服务业的商业性和公益性双重属性，着力推进生活性服务业“规范智能化”(以下简称“六化”)发展，满足人民……</h5></div>
                        <div style={{color:'rgba(0,0,0,0.3)'}}>2016-10-22 12:00:00</div>
                    </div>
                     <div className="regulation_main">

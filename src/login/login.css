@@ -68,8 +68,9 @@
     vertical-align: middle;
     vertical-align: -8%;
 }
-input,input:focus{
+
+input{
     border: none;
     box-shadow: none !important;
-
 }
+.btn:focus{outline:none!important;}

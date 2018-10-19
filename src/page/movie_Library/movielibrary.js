@@ -5,6 +5,7 @@ import "antd/dist/antd.css";
 import Layout from '../../component/layout/index'
 import echarts from 'echarts/lib/echarts';
 import '../../../js/china'
+import '../../../js/anhui'
 class MovieLibrary extends React.Component {
     constructor(props) {
         super(props);
@@ -24,7 +25,7 @@ class MovieLibrary extends React.Component {
             tooltip : {//提示框组件。
                 trigger: 'item'//数据项图形触发，主要在散点图，饼图等无类目轴的图表中使用。
             },
-/*            legend: {
+  /*          legend: {
                 orient: 'horizontal',//图例的排列方向
                 x:'left',//图例的位置
                 data:['订单量']
@@ -48,7 +49,7 @@ class MovieLibrary extends React.Component {
                 text:['高','低'],// 文本，默认为数值文本
                 color: ['#CC0033', '#CC6633','#CC0033']
             },
-/*            toolbox: {//工具栏
+            toolbox: {//工具栏
                 show: true,
                 orient : 'vertical',//工具栏 icon 的布局朝向
                 x: 'right',
@@ -59,7 +60,7 @@ class MovieLibrary extends React.Component {
                     restore : {show: true},//配置项还原。
                     saveAsImage : {show: true}//保存为图片。
                 }
-            },*/
+            },
             roamController: {//控制地图的上下左右放大缩小 图上没有显示
                 show: true,
                 x: 'right',
@@ -131,6 +132,13 @@ class MovieLibrary extends React.Component {
             var dataIndex = params.dataIndex;
             console.log(params);
         });
+        myChart.on('click', function (chinaParam) {
+            if(chinaParam.name == '安徽'){
+                var option = myChart.getOption();
+                option.series[0].map = '安徽';
+                myChart.setOption(option);
+            }
+        });
     }
     render(){
         return(
@@ -138,7 +146,7 @@ class MovieLibrary extends React.Component {
                 <Layout/>
                 <div id='page-wrapper' >
                     <div style={{background:"white"}}>
-                        <div id="china-map" style={{ width:'800px', height:'600px',margin:'auto'}}></div>{/*国家地图结束*/}
+                        <div id="china-map" style={{ width:'800px', height:'760px',margin:'auto'}}></div>{/*国家地图结束*/}
                         <div style={{padding:'20px'}}>
                             <div style={{border:'1px solid rgba(105,105,105,0.3)',width:'100%',height:'auto'}}>
                             <div style={{padding:'10px',lineHeight:'30px'}}>
@@ -227,7 +235,7 @@ class MovieLibrary extends React.Component {
                             </div>
                             </div>
                         </div>{/*国家地图表格*/}
-
+                        <div id="provincial"></div>
                     </div>
                 </div>
             </div>

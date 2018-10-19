@@ -12,8 +12,8 @@ class LoginLayout extends React.Component{
 
     }
     componentDidMount(){
-        console.log(window.pJS)
-        console.log(document.getElementsByTagName('canvas')[0]);
+      /*  console.log(window.pJS)
+        console.log(document.getElementsByTagName('canvas')[0]);*/
         // if(){
         //
         // }

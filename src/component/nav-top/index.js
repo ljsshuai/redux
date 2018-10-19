@@ -1,9 +1,8 @@
 import React from 'react';
 import {Link,withRouter } from 'react-router-dom';
-import{loginout} from '../../store/login.redux';
 import {connect} from "react-redux";
 var storage=window.localStorage;
-@connect(state=>state,{loginout})
+@connect(state=>state)
 class NavTop extends React.Component{
     //退出登录
     constructor(props)
@@ -17,13 +16,12 @@ class NavTop extends React.Component{
     onLogout(){
     }
     render(){
-        console.log(this.props)
         return(
             <div className="navbar navbar-default top-navbar">
                 <div className="navbar-header" >
                     <div className="navbar-brand" ><img style={{margin:'5px auto',width:'158px'}} src={require("../../image/logo.png")}></img></div>
                 </div>
-                <span style={{fontSize:"22px",padding:'50px',lineHeight:'58px'}}><strong>首页</strong></span>
+                <span style={{fontSize:"22px",padding:'50px',lineHeight:'58px'}}><strong>{storage.title===undefined?'首页':storage.title}</strong></span>
                 <ul className="nav navbar-top-links navbar-right">
                     <li className="dropdown">
                         <a className="dropdown-toggle" style={{padding:'11px',marginRight:'30px'}}>

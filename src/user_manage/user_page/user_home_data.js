@@ -58,9 +58,16 @@ class UserHomeData extends React.Component
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <div>国家地区</div>
+                                    <div>所在省市: <select id="province" name="province">
+                                    </select>
+                                        <select id="city" name="city">
+                                        </select>
+                                        <select id="area" name="area">
+                                        </select>
+                                    </div>
+                                    <div>街道地址</div>
                                     <div><input type="text" className="form-control" placeholder="Search" style={{width:'60%'}}/></div>
-                                    <div>国家地区</div>
+                                    <div>联系电话</div>
                                     <div><input type="text" className="form-control" placeholder="Search" style={{width:'60%'}}/></div>
                                     <button style={{marginTop:'30px'}} type="button" className="btn btn-danger" >更新信息</button>
                                 </div>

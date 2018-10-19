@@ -7,6 +7,7 @@ import {login} from '../store/login.redux'
 import {connect} from 'react-redux'
 import User from '../server/userservice';
 const _user =new User();
+var storage=window.localStorage;
 @connect(state=>state,{login})
 class Login extends React.Component{
     constructor(props)
@@ -29,9 +30,10 @@ class Login extends React.Component{
         //验证通过
         if(checkResult.status){
             this.props.login(loginInfo).then(res=>{
-                // console.log(username,password);
+                console.log(res.status);
                 if(res.status==='ok'){
                     message.success(res.message)
+                    storage["username"]=res.data.username
                     this.props.history.push('/index')
                 }else{
                     message.error(res.message)
@@ -44,7 +46,6 @@ class Login extends React.Component{
             }
     }
     render(){
-        console.log(this.props,123)
         return(
             <div style={{width:'100%',height:'100%',background:'#2b2e33',overflow:"hidden"}}>
             <LoginLayout/>
@@ -54,7 +55,7 @@ class Login extends React.Component{
                             <input type="text"
                                    className="form-control"
                                    placeholder="手机号/用户名"
-                                   style={{width:'80%',height:'34px',margin:"0 auto",border:'none',borderBottom:'1px solid #ddd'}}
+                                   style={{width:'80%',height:'50px',margin:"0 auto",border:'none',borderBottom:'1px solid #ddd'}}
                                    id='username'
                             />
                             <input type="password"
@@ -62,10 +63,10 @@ class Login extends React.Component{
                                    className="form-control"
                                    placeholder="密码"
                                    id='password'
-                                   style={{width:'80%',height:'34px',margin:"0 auto",marginTop:"10px",border:'none',borderBottom:'1px solid #ddd'}}
+                                   style={{width:'80%',height:'50px',margin:"0 auto",marginTop:"10px",border:'none',borderBottom:'1px solid #ddd'}}
                             />
                             <div style={{height:'20px'}}><Link to="/forgetpassword" style={{width:"34%",float:'right',height:'30px',lineHeight:'20px',color:'#C0C0C0'}}>忘记密码？</Link></div>
-                            <button type="button" className="btn btn-danger" style={{width:'80%',height:'55px'}} onClick={(e)=>{this.handleClick(e)}} >登录</button>
+                            <button  className="btn btn-danger" style={{width:'80%',height:'55px'}} onClick={(e)=>{this.handleClick(e)}} >登录</button>
                             <div className="order">
                                 <span className="line"></span>
                                 <span className="txt">还没账号？<Link to="/loginregister" style={{color:'red'}}>立即注册</Link></span>
